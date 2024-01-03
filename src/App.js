@@ -1,25 +1,53 @@
-import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
+import Data from './data.json';
+import About from './pages/About.js';
+import Navbar from './pages/Navbar.js';
+import Card from './pages/card.js';
+import './style.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+class App extends Component{
+state={
+  myData:Data,
+}
+
+
+  render(){
+    return (
+    
+      <div className="App">
+        <div class="jumbotron text-center">
+        <div id="banner">
+    <div id="bannerOverlay">
+    <div class="bannerText" id="bannerBody">{
+                        Data.map( unitData => {
+                        return (
+                            <div>{unitData.instructor.name}
+                            </div>
+                        );
+                    })
+            }</div>
+      <div class="bannerText" id="bannerTitle">{
+                        Data.map( unitData => {
+                        return (
+                            <div>{unitData.course.title}
+                            </div>
+                        );
+                    })
+            }</div>
     </div>
-  );
+    <Navbar/>
+    <Card/>
+      <About propsData={this.state.myData}/>
+  </div>
+    </div>
+    
+    
+      </div>
+      
+    );
+  }
+  
 }
 
 export default App;

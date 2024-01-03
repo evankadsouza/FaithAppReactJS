@@ -1,0 +1,133 @@
+
+
+.jumbotron{
+    margin-bottom:0;
+}
+
+.sidebar-container--content--2KZyB {
+    width: 34rem;
+    z-index: 1;
+    border-bottom: 1px solid #d1d7dc;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    background-color: #fff;
+}
+/*CSS for banner*/
+#banner {
+    background: url(./ncdas.png);
+    background-size: cover;
+    height: 480px;
+  }
+  
+  #bannerOverlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: rgb(0,0,0, .4);
+    padding: 0 20px;
+  }
+  
+  .bannerText {
+    color: white;
+    font-weight: 100;
+    width: 600px;
+    text-shadow: 1px 2px rgb(0,0,0,.4);
+    text-align: left;
+  }
+  
+  #bannerTitle {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
+  #bannerBody {
+    margin: 15px 0;
+  }
+  
+ 
+
+  .fade-img {
+    position: relative; 
+  }
+  
+  .fade-img:after {
+    content:""; 
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    height: 40%;  
+  }
+
+  
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px;
+}
+
+.logo a, .links a {
+  color: purple;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.logo a:hover, .links a:hover {
+  color: #ddd;
+}
+ul {
+  font-size: 1.2rem;
+  list-style-type: none;
+  margin: 3em;
+  li {
+    @extend .checkmark;
+  }
+}
+
+.about{
+  margin-top:auto;
+    margin-bottom:auto;
+    text-align:center;
+}
+.ncdas2{
+  border-radius: 50%;
+  height:100px;
+}
+
+.girl{
+  border-radius: 50%;
+  height:60px;
+}
+
+.card1{
+  background-color: rgba(221, 207, 207, 0.1);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin-left: auto;
+  margin-right:100px;
+  height:10em;
+}
+
+.card {
+  background-color: rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+}
+
+.card:hover {
+
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
